@@ -39,13 +39,27 @@ const themes = {
       frame_inactive: 'rgba(96,24,220,1)',
       tab_text: 'rgba(255,255,255,1)',
       tab_background_text: 'rgba(255,255,255,1)',
+      tab_background_separator: 'rgba(0,0,0,0.25)', // Shadow effect on tabs
       bookmark_text: 'rgba(255,255,255,1)',
+      button_background_active: '#d97946',
+      icons_attention: '#ffbb88', // Lightened of left side
+      popup: '#540da9', // Derived from right side
+      popup_border: '#540da9', // Seamless
+      popup_text: 'rgba(255,255,255,1)', // For contrast
+      sidebar: '#b55a31', // Blends with toolbar
+      sidebar_border: '#b55a31', // Seamless
+      sidebar_text: 'rgba(255,255,255,1)', // For contrast
       toolbar: 'rgba(0,0,0,0.25)',
-      toolbar_field: 'rgba(255,255,255,1)',
-      toolbar_field_text: '#0c0c0d',
+      toolbar_field: 'rgba(255,255,255,0)', // Blends with toolbar
+      toolbar_field_text: 'rgba(255,255,255,1)', // For contrast
+      toolbar_field_border: 'rgba(217,121,70,0)', // Seamless
+      toolbar_field_focus: '#d9794680', // Same as left side
+      toolbar_field_border_focus: "#540da980", // Blends with toolbar right side
       toolbar_top_separator: 'rgba(0,0,0,0)',
       toolbar_bottom_separator: 'rgba(0,0,0,0.25)',
-      toolbar_vertical_separator: 'rgba(255,255,255,0.25)'
+      toolbar_vertical_separator: 'rgba(255,255,255,0.25)',
+      ntp_background: '#b55a31', // Blends with toolbar
+      ntp_text: 'rgba(255,255,255,1)' // For contrast
     }
   },
 
@@ -162,7 +176,7 @@ function checkTime() {
   if ((hours >= 6) && (hours <= 12)) {
     setTheme('morning');
   }
-  else if ((hours >= 13) && (hours <= 18)) {
+  else if ((hours >= 13) && (hours <= 20)) {
     setTheme('afternoon');
   }
   else if ((hours >= 19) || (hours <= 4)) {
