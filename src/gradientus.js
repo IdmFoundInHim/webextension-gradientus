@@ -14,14 +14,27 @@ const themes = {
       frame: 'rgba(249,212,35,1)',
       frame_inactive: 'rgba(217,121,70,1)',
       tab_text: 'rgba(255,255,255,1)',
-      tab_background_text: 'rgba(255,255,255,1)',
+      tab_background_text: 'rgba(60,60,60,1)', // Better contrast
+      tab_background_separator: 'rgba(0,0,0,0.25)', // Shadow effect on tabs
       bookmark_text: 'rgba(255,255,255,1)',
       toolbar: 'rgba(0,0,0,0.25)',
-      toolbar_field: 'rgba(255,255,255,1)',
-      toolbar_field_text: '#0c0c0d',
+      icons_attention: '#ffdf40', // Lightened of left side
+      popup: '#b75b31', // Derived from right side
+      popup_border: '#b75b31', // Seamless
+      popup_text: 'rgba(255,255,255,1)', // For contrast
+      sidebar: '#bf9f00', // Blends with toolbar
+      sidebar_border: '#bf9f00', // Seamless
+      sidebar_text: 'rgba(255,255,255,1)', // For contrast
+      toolbar_field: 'rgba(255,255,255,0)', // Blends with toolbar
+      toolbar_field_text: 'rgba(255,255,255,1)', // For contrast
+      toolbar_field_border: 'rgba(217,121,70,0)', // Seamless
+      toolbar_field_focus: '#bf9f0080', // Same as left side
+      toolbar_field_border_focus: "#b75b3180", // Blends with toolbar right side
       toolbar_top_separator: 'rgba(0,0,0,0)',
       toolbar_bottom_separator: 'rgba(0,0,0,0.25)',
-      toolbar_vertical_separator: 'rgba(255,255,255,0.25)'
+      toolbar_vertical_separator: 'rgba(255,255,255,0.25)',
+      ntp_background: '#bf9f00', // Blends with toolbar
+      ntp_text: 'rgba(255,255,255,1)' // For contrast
     }
   },
 
@@ -77,13 +90,26 @@ const themes = {
       frame_inactive: 'rgba(67,203,255,1)',
       tab_text: 'rgba(255,255,255,1)',
       tab_background_text: 'rgba(255,255,255,1)',
+      tab_background_separator: 'rgba(0,0,0,0.25)', // Shadow effect on tabs
       bookmark_text: 'rgba(255,255,255,1)',
       toolbar: 'rgba(0,0,0,0.25)',
-      toolbar_field: 'rgba(255,255,255,1)',
-      toolbar_field_text: '#0c0c0d',
+      icons_attention: '#540da9', // Same as right side
+      popup: '#530da9', // Derived from left side
+      popup_border: '#530da9', // Seamless
+      popup_text: 'rgba(255,255,255,1)', // For contrast
+      sidebar: '#0099bf', // Blends with toolbar
+      sidebar_border: '#0099bf', // Seamless
+      sidebar_text: 'rgba(255,255,255,1)', // For contrast
+      toolbar_field: 'rgba(255,255,255,0)', // Blends with toolbar
+      toolbar_field_text: 'rgba(255,255,255,1)', // For contrast
+      toolbar_field_border: 'rgba(217,121,70,0)', // Seamless
+      toolbar_field_focus: '#0099bf80', // Same as right side
+      toolbar_field_border_focus: "#530da980", // Blends with toolbar left side
       toolbar_top_separator: 'rgba(0,0,0,0)',
       toolbar_bottom_separator: 'rgba(0,0,0,0.25)',
-      toolbar_vertical_separator: 'rgba(255,255,255,0.25)'
+      toolbar_vertical_separator: 'rgba(255,255,255,0.25)',
+      ntp_background: '#0099bf', // Blends with toolbar
+      ntp_text: 'rgba(255,255,255,1)' // For contrast
     }
   },
 
@@ -99,15 +125,28 @@ const themes = {
     colors: {
       frame: 'rgba(67,203,255,1)',
       frame_inactive: 'rgba(249,212,35,1)',
-      tab_text: 'rgba(255,255,255,1)',
-      tab_background_text: 'rgba(255,255,255,1)',
-      bookmark_text: 'rgba(255,255,255,1)',
-      toolbar: 'rgba(0,0,0,0.25)',
-      toolbar_field: 'rgba(255,255,255,1)',
-      toolbar_field_text: '#0c0c0d',
-      toolbar_top_separator: 'rgba(0,0,0,0)',
-      toolbar_bottom_separator: 'rgba(0,0,0,0.25)',
-      toolbar_vertical_separator: 'rgba(255,255,255,0.25)'
+      tab_text: 'rgba(60,60,60,1)', // Better contrast
+      tab_background_text: 'rgba(30,30,30,1)', // Better contrast
+      tab_background_separator: 'rgba(0,0,0,0.25)', // Shadow effect on tabs
+      bookmark_text: 'rgba(60,60,60,1)', // For contrast
+      toolbar: 'rgba(255,255,255,0.4)', // Light toolbar
+      icons_attention: '#019cbe', // Lightened of left side
+      popup: '#67e0fe', // Derived from right side
+      popup_border: '#67e0fe00', // Seamless
+      popup_text: 'rgba(60,60,60,1)', // For contrast
+      sidebar: '#ffe666', // Blends with toolbar
+      sidebar_border: '#ffe66600', // Seamless
+      sidebar_text: 'rgba(0,0,0,1)', // For contrast
+      toolbar_field: 'rgba(255,255,255,0)', // Blends with toolbar
+      toolbar_field_text: 'rgba(60,60,60,1)', // For contrast
+      toolbar_field_border: 'rgba(217,121,70,0)', // Seamless
+      toolbar_field_focus: '#530da980', // Same as left side
+      toolbar_field_border_focus: "#ffe04080", // Blends with toolbar right side
+      toolbar_top_separator: 'rgba(255,255,255,0)', // With Light toolbar
+      toolbar_bottom_separator: 'rgba(255,255,255,0.4)', // Seamless
+      toolbar_vertical_separator: 'rgba(255,255,255,0.25)',
+      ntp_background: '#ffe666', // Blends with toolbar
+      ntp_text: 'rgba(0,0,0,1)' // For contrast
     }
   },
 
@@ -176,7 +215,7 @@ function checkTime() {
   if ((hours >= 6) && (hours <= 12)) {
     setTheme('morning');
   }
-  else if ((hours >= 13) && (hours <= 20)) {
+  else if ((hours >= 13) && (hours <= 18)) {
     setTheme('afternoon');
   }
   else if ((hours >= 19) || (hours <= 4)) {
