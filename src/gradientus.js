@@ -13,28 +13,29 @@ const themes = {
     colors: {
       frame: 'rgba(249,212,35,1)',
       frame_inactive: 'rgba(217,121,70,1)',
-      tab_text: 'rgba(255,255,255,1)',
+      tab_text: 'rgba(30,30,30,1)', // For contrast
       tab_background_text: 'rgba(60,60,60,1)', // Better contrast
       tab_background_separator: 'rgba(0,0,0,0.25)', // Shadow effect on tabs
-      bookmark_text: 'rgba(255,255,255,1)',
-      toolbar: 'rgba(0,0,0,0.25)',
-      icons_attention: '#ffdf40', // Lightened of left side
-      popup: '#b75b31', // Derived from right side
-      popup_border: '#b75b31', // Seamless
-      popup_text: 'rgba(255,255,255,1)', // For contrast
-      sidebar: '#bf9f00', // Blends with toolbar
-      sidebar_border: '#bf9f00', // Seamless
-      sidebar_text: 'rgba(255,255,255,1)', // For contrast
+      bookmark_text: 'rgba(60,60,60,1)', // For contrast
+      toolbar: 'rgba(255,255,255,0.4)', // Light toolbar
+      icons_attention: 'rgba(60,60,60,1)', // Same as text color
+      popup: 'rgba(249,181,136,1)', // Derived from right side
+      popup_border: 'rgba(249,181,136,0)', // Seamless
+      popup_text: 'rgba(0,0,0,1)', // For contrast
+      sidebar: 'rgba(255,229,102,1)', // Blends with toolbar
+      sidebar_border: 'rgba(255,229,102,0)', // Seamless
+      sidebar_text: 'rgba(0,0,0,1)', // For contrast
       toolbar_field: 'rgba(255,255,255,0)', // Blends with toolbar
-      toolbar_field_text: 'rgba(255,255,255,1)', // For contrast
+      toolbar_field_text: 'rgba(30,30,30,1)', // For contrast
+      toolbar_field_text_focus: 'rgba(0,0,0,1)', // For contrast
       toolbar_field_border: 'rgba(217,121,70,0)', // Seamless
-      toolbar_field_focus: '#bf9f0080', // Same as left side
-      toolbar_field_border_focus: "#b75b3180", // Blends with toolbar right side
+      toolbar_field_focus: 'rgba(255,213,0,80)', // Same as left side
+      toolbar_field_border_focus: "rgba(244,123,64,80)", // Blends with toolbar right side
       toolbar_top_separator: 'rgba(0,0,0,0)',
-      toolbar_bottom_separator: 'rgba(0,0,0,0.25)',
+      toolbar_bottom_separator: 'rgba(255,255,255,0.4)', // Seamless
       toolbar_vertical_separator: 'rgba(255,255,255,0.25)',
-      ntp_background: '#bf9f00', // Blends with toolbar
-      ntp_text: 'rgba(255,255,255,1)' // For contrast
+      ntp_background: 'rgba(255,229,102,1)', // Blends with toolbar
+      ntp_text: 'rgba(0,0,0,1)' // For contrast
     }
   },
 
@@ -125,8 +126,8 @@ const themes = {
     colors: {
       frame: 'rgba(67,203,255,1)',
       frame_inactive: 'rgba(249,212,35,1)',
-      tab_text: 'rgba(60,60,60,1)', // Better contrast
-      tab_background_text: 'rgba(30,30,30,1)', // Better contrast
+      tab_text: 'rgba(30,30,30,1)', // Better contrast
+      tab_background_text: 'rgba(60,60,60,1)', // Better contrast
       tab_background_separator: 'rgba(0,0,0,0.25)', // Shadow effect on tabs
       bookmark_text: 'rgba(60,60,60,1)', // For contrast
       toolbar: 'rgba(255,255,255,0.4)', // Light toolbar
@@ -138,9 +139,10 @@ const themes = {
       sidebar_border: '#ffe66600', // Seamless
       sidebar_text: 'rgba(0,0,0,1)', // For contrast
       toolbar_field: 'rgba(255,255,255,0)', // Blends with toolbar
-      toolbar_field_text: 'rgba(60,60,60,1)', // For contrast
+      toolbar_field_text: 'rgba(30,30,30,1)', // For contrast
       toolbar_field_border: 'rgba(217,121,70,0)', // Seamless
       toolbar_field_focus: '#530da980', // Same as left side
+      toolbar_field_text_focus: 'rgba(255,255,255,1)', // Same as left side
       toolbar_field_border_focus: "#ffe04080", // Blends with toolbar right side
       toolbar_top_separator: 'rgba(255,255,255,0)', // With Light toolbar
       toolbar_bottom_separator: 'rgba(255,255,255,0.4)', // Seamless
@@ -182,6 +184,20 @@ const themes = {
       sidebar: 'rgba(52,0,88,1)',
       sidebar_text: "rgba(249,249,250,1)",
       sidebar_border: "rgba(255,255,255,0.1)"
+      /*
+      toolbar_vertical_separator: 'rgba(255,255,255,0.25)',
+      toolbar_field_text: 'rgba(54,57,89,1)',
+      toolbar_field_text_focus: 'rgba(52,0,88,1)',
+      toolbar_field_border_focus: 'rgba(148,0,255,1)',
+      ntp_background: 'rgba(37,0,62,1)',
+      ntp_text: 'rgba(255,255,255,1)',
+      popup: 'rgba(52,0,88,1)',
+      popup_text: 'rgba(249,249,250,1)',
+      popup_border: 'rgba(22,0,37,1)',
+      sidebar: 'rgba(52,0,88,1)',
+      sidebar_text: "rgba(249,249,250,1)",
+      sidebar_border: "rgba(255,255,255,0.1)"
+      */
     }
   }
 };
