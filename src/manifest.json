@@ -2,12 +2,12 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "1.2.1",
-  "author": "Cynthia Pereira",
-  "homepage_url": "https://github.com/cynthiapereira/webextension-gradientus",
+  "version": "1.3a01",
+  "author": "Cynthia Pereira, IdmFoundInHim",
+  "homepage_url": "https://github.com/IdmFoundInHim/webextension-gradientus",
   "applications": {
     "gecko": {
-      "id": "webextension-gradientus@cynthiapereira.com",
+      "id": "gradientus-mod-testenv@IdmFoundInHim",
       "strict_min_version": "57.0"
     }
   },

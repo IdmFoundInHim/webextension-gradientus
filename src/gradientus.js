@@ -20,7 +20,7 @@ const themes = {
       toolbar: 'rgba(255,255,255,0.4)', // Light toolbar
       icons_attention: 'rgba(60,60,60,1)', // Same as text color
       popup: 'rgba(249,181,136,1)', // Derived from right side
-      popup_border: 'rgba(249,181,136,0)', // Seamless
+      popup_border: 'rgba(249,181,136,1)', // Seamless
       popup_text: 'rgba(0,0,0,1)', // For contrast
       sidebar: 'rgba(255,229,102,1)', // Blends with toolbar
       sidebar_border: 'rgba(255,229,102,0)', // Seamless
